@@ -2640,8 +2640,8 @@ if (zhanghao) {
   }
   fClear();
   fInfo("登录回账号1");
-  console.verbose(zhanghao_list[0][0][0], zhanghao_list[0][0][1]);
-  login(zhanghao_list[0][0][0], zhanghao_list[0][0][1]);
+  console.verbose(zhanghao_list[0][0], zhanghao_list[0][1]);
+  login(zhanghao_list[0][0], zhanghao_list[0][1]);
 } else {
   main();
 }
