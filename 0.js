@@ -2593,7 +2593,7 @@ function main(userinfo){
     fTips("建议重试延迟不要低于900s即15分钟，已设为1800s");
     retry_time = 1800;
   } else { retry_time = Number(watchdog) }
-  for (let i=0;i<100;i++) {
+  for (let i=0;i<99;i++) {
     fClear();
     fInfo("开始第"+(i+1)+"轮，最长运行时间为"+retry_time+"s");
     let xxqg_begin=new Date();
@@ -2632,7 +2632,7 @@ if (zhanghao) {
     let userinfo = zh.split(/:|：/);
     zhanghao_list.push(userinfo);
   };
-  if (zhanghao_list.length > 100) {zhanghao_list.length = 100;}
+  if (zhanghao_list.length > 99) {zhanghao_list.length = 99;}
   //console.verbose(zhanghao_list);
   for (let userinfo of zhanghao_list) {
     console.verbose(userinfo);
